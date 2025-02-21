@@ -51,4 +51,4 @@ def download_file():
 
 if __name__ == "__main__":
     fetch_weather_data()  # Scrape data & save to CSV
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=8000)
