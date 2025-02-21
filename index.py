@@ -6,7 +6,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 import csv
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="templates")
 
 def fetch_weather_data():
     """Website se data scrape karega aur CSV me save karega."""
